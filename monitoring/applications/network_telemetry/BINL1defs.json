@@ -1,0 +1,1 @@
+{"tag": "BINL1", "output_path": "C:/datalab/network/output/", "inputs": [{"type": "BIN", "path": "C:\\DATALAB/NETWORK\\WORKLOAD\\input10.bin", "x": 500, "y": 500, "interval": 200, "window_size_msec": 2000}]}

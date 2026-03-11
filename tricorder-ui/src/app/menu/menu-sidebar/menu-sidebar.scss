@@ -1,0 +1,43 @@
+.sidebar {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar-menu {
+    padding: 50px 0 0 0;
+    width: 280px;
+    background-color: #f6f6f6;
+    border-radius: 0;
+}
+
+.sidebar-menu-buttons {
+    padding: 0 10px 0 10px;
+}
+
+.sidebar-menu-button {
+    height: 80px;
+    width: 260px;
+    border-radius: 0;
+    justify-content: flex-start;
+}
+
+.sidebar-menu-button-text {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.sidebar-menu-icon {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.sidebar-menu-divider {
+    opacity: 50%;
+}
+
+.main-content {
+    padding: 20px;
+}

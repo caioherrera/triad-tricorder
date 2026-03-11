@@ -1,0 +1,13 @@
+*csv
+*pyc
+*newick
+*out
+*out.worked
+*png
+*log
+/_old/*
+/analysis/output/*/*
+/monitoring/output/*/*
+/tricorder-backend/__pycache__/*
+/tricorder-backend/.venv/*
+/tricorder-ui/.vscode/*

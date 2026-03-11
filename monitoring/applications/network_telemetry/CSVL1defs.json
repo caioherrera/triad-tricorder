@@ -1,0 +1,1 @@
+{"tag": "CSVL1", "output_path": "C:/datalab/network/output/", "inputs": [{"type": "CSV", "path": "C:\\DATALAB\\NETWORK\\WORKLOAD\\input10.csv", "x": 50, "y": 1000, "interval": 4000, "id": 42}]}

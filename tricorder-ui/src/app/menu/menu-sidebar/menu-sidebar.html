@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidebar">
+    <mat-sidenav mode="side" class="sidebar-menu" [(opened)]="shouldOpenSidebar">
+      <div class="sidebar-menu-buttons">
+        <button mat-button class="sidebar-menu-button" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon fontIcon="home" class="sidebar-menu-icon" ></mat-icon>
+            <span class="sidebar-menu-button-text">Home</span>
+        </button>
+        <mat-divider class="sidebar-menu-divider" />
+        <button mat-button class="sidebar-menu-button" routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon fontIcon="app_registration" class="sidebar-menu-icon" ></mat-icon>
+            <span class="sidebar-menu-button-text">Projects</span>
+        </button>
+        <mat-divider class="sidebar-menu-divider" />
+        <button mat-button class="sidebar-menu-button" routerLink="/versions" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon fontIcon="terminal" class="sidebar-menu-icon" ></mat-icon>
+            <span class="sidebar-menu-button-text">Versions</span>
+        </button>
+        <mat-divider class="sidebar-menu-divider" />
+        <button mat-button class="sidebar-menu-button" routerLink="/workloads" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon fontIcon="work" class="sidebar-menu-icon" ></mat-icon>
+            <span class="sidebar-menu-button-text">Workloads</span>
+        </button>
+        <mat-divider class="sidebar-menu-divider" />
+        <button mat-button class="sidebar-menu-button" routerLink="/sessions" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon fontIcon="timer" class="sidebar-menu-icon" ></mat-icon>
+            <span class="sidebar-menu-button-text">Sessions</span>
+        </button>
+      </div>
+    </mat-sidenav>
+</mat-sidenav-container>

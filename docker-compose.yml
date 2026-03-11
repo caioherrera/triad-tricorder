@@ -1,0 +1,105 @@
+services:
+
+  monitor:
+    build: ./monitoring
+    container_name: ${TRICORDER_MONITOR_HOSTNAME}
+    volumes:
+      - ./monitoring:/opt/tricorder/monitor
+      - ./core:/opt/tricorder/core
+      - ./profiles:/opt/tricorder/profiles
+    ports:
+      - "${TRICORDER_MONITOR_PORT}:${TRICORDER_MONITOR_PORT}"
+    env_file:
+      - .env
+    networks:
+      - tricorder-network
+    restart: on-failure
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.5'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+
+  analysis:
+    build: ./analysis
+    container_name: ${TRICORDER_ANALYSIS_HOSTNAME}
+    volumes:
+      - ./analysis:/opt/tricorder/analysis
+      - ./core:/opt/tricorder/core
+      - ./profiles:/opt/tricorder/profiles
+    ports:
+      - "${TRICORDER_ANALYSIS_PORT}:${TRICORDER_ANALYSIS_PORT}"
+    env_file:
+      - .env
+    networks:
+      - tricorder-network
+    restart: on-failure
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+          cpus: '2.0'
+        reservations:
+          memory: 2G
+          cpus: '1.0'
+
+  backend:
+    build: ./tricorder-backend
+    volumes:
+      - ./profiles:/opt/tricorder/profiles
+      - ./data:/opt/tricorder/data
+      - ./core:/opt/tricorder/core
+      - ./tricorder-backend:/opt/tricorder/backend
+    ports:
+      - "${TRICORDER_BACKEND_PORT}:${TRICORDER_BACKEND_PORT}"
+    env_file:
+      - .env
+    container_name: ${TRICORDER_BACKEND_HOSTNAME}
+    networks:
+      - tricorder-network
+    restart: on-failure
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+        reservations:
+          memory: 256M
+          cpus: '0.25'
+
+  frontend:
+    depends_on:
+      - backend
+    build:
+      context: ./tricorder-ui
+      args:
+        TRICORDER_BACKEND_HOSTNAME: ${TRICORDER_BACKEND_HOSTNAME}
+        TRICORDER_BACKEND_PORT: ${TRICORDER_BACKEND_PORT}
+        TRICORDER_BACKEND_IP: ${TRICORDER_BACKEND_IP}
+    volumes:
+      - ./tricorder-ui:/opt/tricorder/frontend - /opt/tricorder/frontend/node_modules
+    ports:
+      - "${TRICORDER_FRONTEND_OUTER_PORT}:${TRICORDER_FRONTEND_INNER_PORT}"
+    env_file:
+      - .env
+    container_name: ${TRICORDER_FRONTEND_HOSTNAME}
+    networks:
+      - tricorder-network
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+        reservations:
+          memory: 512M
+          cpus: '0.25'
+
+networks:
+  tricorder-network:

@@ -1,0 +1,8 @@
+<mat-card appearance="outlined" class="menu-breadcrumb">
+    <mat-card-content class="menu-breadcrumb-text">
+        <span>Home</span>
+        @if (!isHome) {
+            <span *ngFor="let routeName of routeParts">&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;{{ routeName | titlecase}}</span>
+        }
+    </mat-card-content>
+</mat-card>

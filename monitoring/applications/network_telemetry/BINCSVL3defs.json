@@ -1,0 +1,1 @@
+{"tag": "BINCSVL3", "output_path": "C:/datalab/network/output/", "inputs": [{"type": "BIN", "path": "C:\\DATALAB/NETWORK\\WORKLOAD\\input9.bin", "x": 10000, "y": 10, "interval": 200, "window_size_msec": 2000}, {"type": "CSV", "path": "C:\\DATALAB\\NETWORK\\WORKLOAD\\input9.csv", "x": 50, "y": 1000, "interval": 4000, "id": 42}]}

@@ -1,0 +1,9 @@
+<menu-navbar />
+<div class="container">
+  <menu-sidebar />
+
+  <div class="content" [ngClass]="{'shrink': isSidebarOpen}">
+    <menu-breadcrumb />
+    <router-outlet />
+  </div>
+</div>

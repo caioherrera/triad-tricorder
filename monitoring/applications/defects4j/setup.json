@@ -1,0 +1,279 @@
+{
+    "defects": [
+        {
+            "project": "Chart",
+            "class": "order",
+            "id": "22"
+        },
+        {
+            "project": "Chart",
+            "class": "jump",
+            "id": "18"
+        },
+        {
+            "project": "Chart",
+            "class": "call",
+            "id": "12"
+        },
+        {
+            "project": "Chart",
+            "class": "pred",
+            "id": "1"
+        },
+        {
+            "project": "Chart",
+            "class": "guard",
+            "id": "4"
+        },
+        {
+            "project": "Chart",
+            "class": "block",
+            "id": "5"
+        },
+        {
+            "project": "Chart",
+            "class": "def",
+            "id": "3"
+        },
+        {
+            "project": "Chart",
+            "class": "use",
+            "id": "7"
+        },
+        {
+            "project": "Closure",
+            "class": "order",
+            "id": "13"
+        },
+        {
+            "project": "Closure",
+            "class": "jump",
+            "id": "21"
+        },
+        {
+            "project": "Closure",
+            "class": "call",
+            "id": "28"
+        },
+        {
+            "project": "Closure",
+            "class": "pred",
+            "id": "20"
+        },
+        {
+            "project": "Closure",
+            "class": "guard",
+            "id": "1"
+        },
+        {
+            "project": "Closure",
+            "class": "block",
+            "id": "44"
+        },
+        {
+            "project": "Closure",
+            "class": "def",
+            "id": "52"
+        },
+        {
+            "project": "Closure",
+            "class": "use",
+            "id": "14"
+        },
+        {
+            "project": "Jsoup",
+            "class": "order",
+            "id": "49"
+        },
+        {
+            "project": "Jsoup",
+            "class": "jump",
+            "id": "79"
+        },
+        {
+            "project": "Jsoup",
+            "class": "call",
+            "id": "1"
+        },
+        {
+            "project": "Jsoup",
+            "class": "pred",
+            "id": "43"
+        },
+        {
+            "project": "Jsoup",
+            "class": "guard",
+            "id": "26"
+        },
+        {
+            "project": "Jsoup",
+            "class": "block",
+            "id": "7"
+        },
+        {
+            "project": "Jsoup",
+            "class": "def",
+            "id": "9"
+        },
+        {
+            "project": "Jsoup",
+            "class": "use",
+            "id": "57"
+        },
+        {
+            "project": "Lang",
+            "class": "order",
+            "id": "53"
+        },
+        {
+            "project": "Lang",
+            "class": "jump",
+            "id": "35"
+        },
+        {
+            "project": "Lang",
+            "class": "call",
+            "id": "38"
+        },
+        {
+            "project": "Lang",
+            "class": "pred",
+            "id": "16"
+        },
+        {
+            "project": "Lang",
+            "class": "guard",
+            "id": "3"
+        },
+        {
+            "project": "Lang",
+            "class": "block",
+            "id": "52"
+        },
+        {
+            "project": "Lang",
+            "class": "def",
+            "id": "4"
+        },
+        {
+            "project": "Lang",
+            "class": "use",
+            "id": "8"
+        },
+        {
+            "project": "Math",
+            "class": "order",
+            "id": "86"
+        },
+        {
+            "project": "Math",
+            "class": "jump",
+            "id": "1"
+        },
+        {
+            "project": "Math",
+            "class": "call",
+            "id": "35"
+        },
+        {
+            "project": "Math",
+            "class": "pred",
+            "id": "15"
+        },
+        {
+            "project": "Math",
+            "class": "guard",
+            "id": "28"
+        },
+        {
+            "project": "Math",
+            "class": "block",
+            "id": "44"
+        },
+        {
+            "project": "Math",
+            "class": "def",
+            "id": "2"
+        },
+        {
+            "project": "Math",
+            "class": "use",
+            "id": "34"
+        },
+        {
+            "project": "Mockito",
+            "class": "jump",
+            "id": "1"
+        },
+        {
+            "project": "Mockito",
+            "class": "call",
+            "id": "32"
+        },
+        {
+            "project": "Mockito",
+            "class": "pred",
+            "id": "34"
+        },
+        {
+            "project": "Mockito",
+            "class": "guard",
+            "id": "8"
+        },
+        {
+            "project": "Mockito",
+            "class": "block",
+            "id": "2"
+        },
+        {
+            "project": "Mockito",
+            "class": "def",
+            "id": "26"
+        },
+        {
+            "project": "Mockito",
+            "class": "use",
+            "id": "25"
+        },
+        {
+            "project": "Time",
+            "class": "order",
+            "id": "7"
+        },
+        {
+            "project": "Time",
+            "class": "jump",
+            "id": "15"
+        },
+        {
+            "project": "Time",
+            "class": "call",
+            "id": "26"
+        },
+        {
+            "project": "Time",
+            "class": "pred",
+            "id": "19"
+        },
+        {
+            "project": "Time",
+            "class": "guard",
+            "id": "3"
+        },
+        {
+            "project": "Time",
+            "class": "block",
+            "id": "24"
+        },
+        {
+            "project": "Time",
+            "class": "def",
+            "id": "4"
+        },
+        {
+            "project": "Time",
+            "class": "use",
+            "id": "16"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+munkres==1.0.12
+numpy #==1.16.6
+python-igraph==0.10.1
+Pillow
+matplotlib
+scikit-learn
+psutil
+tk
+pandas
+prettytable
+ipython
+h5py
+cairocffi
+pycairo
